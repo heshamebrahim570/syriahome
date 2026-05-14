@@ -1,0 +1,1376 @@
+<!-- تحديد نوع المستند: HTML5 -->
+<!DOCTYPE html>
+<html lang="ar"> <!-- تغيير اللغة إلى العربية -->
+
+<head>
+  <!-- تعيين ترميز الأحرف إلى UTF-8 لدعم اللغة العربية -->
+  <meta charset="UTF-8">
+
+  <!-- التوافق مع متصفح إنترنت إكسبلورر -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- جعل الموقع متجاوب مع جميع أحجام الشاشات -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- عنوان الصفحة (يظهر في التبويب) -->
+  <title>هومفيرس - ابحث عن منزل أحلامك</title> <!-- تمت الترجمة للعربية -->
+
+  <!-- أيقونة الموقع الصغيرة التي تظهر بجانب العنوان في التبويب -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- رابط إلى ملف التنسيق الخاص بالموقع -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- تحميل خطوط Google (خط نونيتو سانس وبوبينز) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - رأس الموقع (HEADER)
+  -->
+  <header class="header" data-header>
+
+    <!-- طبقة تراكب تظهر خلف القائمة الجانبية عند فتحها -->
+    <div class="overlay" data-overlay></div>
+
+    <!-- الجزء العلوي من الرأس -->
+    <div class="header-top">
+      <div class="container">
+
+        <!-- قائمة تحتوي على معلومات الاتصال -->
+        <ul class="header-top-list">
+
+          <!-- عنصر البريد الإلكتروني -->
+          <li>
+            <a href="mailto:info@homeverse.com" class="header-top-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>info@homeverse.com</span>
+            </a>
+          </li>
+
+          <!-- عنصر العنوان الجغرافي -->
+          <li>
+            <a href="#" class="header-top-link">
+              <ion-icon name="location-outline"></ion-icon>
+              <address>15/A، برج نست، نيويورك</address> <!-- تمت الترجمة -->
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+
+          <!-- روابط وسائل التواصل الاجتماعي -->
+          <ul class="header-top-social-list">
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- زر إضافة إعلان -->
+          <button class="header-top-btn">أضف إعلان</button> <!-- تمت الترجمة -->
+        </div>
+
+      </div>
+    </div>
+
+    <!-- الجزء السفلي من الرأس ويحتوي على الشعار والقائمة -->
+    <div class="header-bottom">
+      <div class="container">
+
+        <!-- شعار الموقع -->
+        <a href="#" class="logo">
+          <img src="./assets/images/logo (2).png" alt="شعار هومفيرس"> <!-- تمت الترجمة -->
+        </a>
+
+        <!-- قائمة التنقل الرئيسية -->
+        <nav class="navbar" data-navbar>
+
+          <!-- الجزء العلوي من القائمة (عند عرضها على الشاشات الصغيرة) -->
+          <div class="navbar-top">
+
+            <!-- شعار مكرر داخل القائمة الجانبية -->
+            <a href="#" class="logo">
+              <img src="./assets/images/logo (2).png" alt="شعار هومفيرس">
+            </a>
+
+            <!-- زر إغلاق القائمة -->
+            <button class="nav-close-btn" data-nav-close-btn aria-label="إغلاق القائمة">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <!-- الجزء السفلي من القائمة ويحتوي على الروابط -->
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>الرئيسية</a> <!-- Home -->
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link" data-nav-link>من نحن</a> <!-- About -->
+              </li>
+
+              <li>
+                <a href="#service" class="navbar-link" data-nav-link>الخدمات</a> <!-- Service -->
+              </li>
+
+              <li>
+                <a href="#property" class="navbar-link" data-nav-link>العقارات</a> <!-- Property -->
+              </li>
+
+              <li>
+                <a href="#blog" class="navbar-link" data-nav-link>المدونة</a> <!-- Blog -->
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>اتصل بنا</a> <!-- Contact -->
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
+
+        <!-- أزرار العمليات في أسفل الرأس مثل البحث، الملف الشخصي، السلة -->
+        <div class="header-bottom-actions">
+
+          <!-- زر البحث -->
+          <button class="header-bottom-actions-btn" aria-label="بحث">
+            <ion-icon name="search-outline"></ion-icon>
+            <span>بحث</span> <!-- تمت الترجمة -->
+          </button>
+
+          <!-- زر الملف الشخصي -->
+          <button class="header-bottom-actions-btn" aria-label="الملف الشخصي">
+            <ion-icon name="person-outline"></ion-icon>
+            <span>الملف الشخصي</span> <!-- تمت الترجمة -->
+          </button>
+
+          <!-- زر السلة -->
+          <button class="header-bottom-actions-btn" aria-label="السلة">
+            <ion-icon name="cart-outline"></ion-icon>
+            <!-- زر السلة -->
+<span>السلة</span>
+</button>
+
+<!-- زر القائمة الجانبية (يفتح قائمة التنقل على الشاشات الصغيرة) -->
+<button class="header-bottom-actions-btn" data-nav-open-btn aria-label="فتح القائمة">
+  <ion-icon name="menu-outline"></ion-icon>
+  <span>القائمة</span> <!-- تمت الترجمة -->
+</button>
+
+</div> <!-- نهاية .header-bottom-actions -->
+</div> <!-- نهاية .container -->
+</div> <!-- نهاية .header-bottom -->
+</header> <!-- نهاية الترويسة -->
+
+
+
+<main>
+  <article>
+
+    <!-- 
+      - القسم الرئيسي HERO
+    -->
+    <section class="hero" id="home">
+      <div class="container">
+
+        <div class="hero-content">
+
+          <!-- سطر فرعي فيه أيقونة واسم الوكالة -->
+          <p class="hero-subtitle">
+            <ion-icon name="home"></ion-icon>
+            <span>وكالة العقارات</span> <!-- Real Estate Agency -->
+          </p>
+
+          <!-- العنوان الرئيسي -->
+          <h2 class="h1 hero-title">اعثر على منزل أحلامك معنا</h2> <!-- تمت الترجمة -->
+
+          <!-- وصف مختصر -->
+          <p class="hero-text">
+            هذا النص مجرد نموذج يستخدم لعرض المحتوى. لا يمثل محتوى حقيقي.
+          </p>
+
+          <!-- زر إجراء -->
+          <button class="btn">أرسل استفسار</button> <!-- Make An Enquiry -->
+
+        </div>
+
+        <!-- صورة في الجهة الأخرى -->
+        <figure class="hero-banner">
+          <img src="./assets/images/hero-banner.png" alt="نموذج منزل حديث" class="w-100"> <!-- تمت الترجمة -->
+        </figure>
+
+      </div>
+    </section>
+
+
+
+    <!-- 
+      - قسم من نحن ABOUT
+    -->
+    <section class="about" id="about">
+      <div class="container">
+
+        <!-- صور توضح الجزء الداخلي للمنزل -->
+        <figure class="about-banner">
+          <img src="./assets/images/about-banner-1.png" alt="داخل المنزل">
+          <img src="./assets/images/about-banner-2.jpg" alt="داخل المنزل" class="abs-img">
+        </figure>
+
+        <div class="about-content">
+
+          <!-- عنوان فرعي -->
+          <p class="section-subtitle">من نحن</p> <!-- About Us -->
+
+          <!-- عنوان رئيسي -->
+          <h2 class="h2 section-title">أكبر منصة لتأجير العقارات في العالم</h2> <!-- تمت الترجمة -->
+
+          <!-- وصف عن الشركة -->
+          <p class="about-text">
+            يعمل لدينا أكثر من 39,000 شخص في أكثر من 70 دولة حول العالم. هذا الانتشار الواسع يتيح لنا تقديم خدمات متخصصة.
+          </p>
+
+          <!-- قائمة ميزات الشركة -->
+          <ul class="about-list">
+
+            <li class="about-item">
+              <div class="about-item-icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </div>
+              <p class="about-item-text">تصميم ذكي للمنزل</p> <!-- Smart Home Design -->
+            </li>
+
+            <li class="about-item">
+              <div class="about-item-icon">
+                <ion-icon name="leaf-outline"></ion-icon>
+              </div>
+              <p class="about-item-text">مناظر طبيعية خلابة</p> <!-- Beautiful Scene Around -->
+            </li>
+
+            <li class="about-item">
+              <div class="about-item-icon">
+                <ion-icon name="wine-outline"></ion-icon>
+              </div>
+              <p class="about-item-text">أسلوب حياة فاخر</p> <!-- Exceptional Lifestyle -->
+            </li>
+
+            <li class="about-item">
+              <div class="about-item-icon">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+              </div>
+              <p class="about-item-text">أمان كامل على مدار الساعة</p> <!-- Complete 24/7 Security -->
+            </li>
+
+          </ul>
+
+          <!-- اقتباس ترويجي -->
+          <p class="callout">
+            "هذا مجرد نص تجريبي يستخدم في العروض والتصميمات."
+          </p>
+
+          <!-- زر الانتقال إلى قسم الخدمات -->
+          <a href="#service" class="btn">خدماتنا</a> <!-- Our Services -->
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- 
+      - قسم الخدمات SERVICE
+    -->
+    <section class="service" id="service">
+      <div class="container">
+
+        <!-- عنوان فرعي -->
+        <p class="section-subtitle">خدماتنا</p> <!-- Our Services -->
+
+        <!-- العنوان الرئيسي -->
+        <h2 class="h2 section-title">مجالات تركيزنا الرئيسية</h2> <!-- Our Main Focus -->
+
+        <!-- قائمة بالخدمات -->
+        <ul class="service-list">
+
+          <li>
+            <div class="service-card">
+
+              <!-- أيقونة الخدمة -->
+              <div class="card-icon">
+                <img src="./assets/images/service-1.png" alt="أيقونة الخدمة">
+              </div>
+
+              <!-- عنوان الخدمة -->
+              <h3 class="h3 card-title">
+                <a href="#">شراء منزل</a> <!-- Buy a home -->
+              </h3>
+
+              <!-- وصف الخدمة -->
+              <p class="card-text">
+                أكثر من مليون منزل متاح للبيع على موقعنا. يمكننا مساعدتك في العثور على المنزل الذي تحلم به.
+              </p>
+              <!-- رابط يحتوي على نص "ابحث عن منزل" وأيقونة سهم -->
+<a href="#" class="card-link">
+    <span>ابحث عن منزل</span>
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </a>
+  
+  </div> <!-- إغلاق عنصر غير ظاهر من الكود السابق -->
+  </li>
+  
+  <!-- عنصر خدمة رقم 2: استئجار منزل -->
+  <li>
+    <div class="service-card">
+  
+      <!-- أيقونة الخدمة -->
+      <div class="card-icon">
+        <img src="./assets/images/service-2.png" alt="رمز الخدمة">
+      </div>
+  
+      <!-- عنوان الخدمة: استئجار منزل -->
+      <h3 class="h3 card-title">
+        <a href="#">استئجار منزل</a>
+      </h3>
+  
+      <!-- وصف الخدمة -->
+      <p class="card-text">
+        أكثر من مليون منزل معروض للبيع متاح على الموقع، يمكننا مساعدتك في العثور على منزل يناسبك.
+      </p>
+  
+      <!-- رابط إجراء: ابحث عن منزل -->
+      <a href="#" class="card-link">
+        <span>ابحث عن منزل</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+  
+    </div>
+  </li>
+  
+  <!-- عنصر خدمة رقم 3: بيع منزل -->
+  <li>
+    <div class="service-card">
+  
+      <!-- أيقونة الخدمة -->
+      <div class="card-icon">
+        <img src="./assets/images/service-3.png" alt="رمز الخدمة">
+      </div>
+  
+      <!-- عنوان الخدمة: بيع منزل -->
+      <h3 class="h3 card-title">
+        <a href="#">بيع منزل</a>
+      </h3>
+  
+      <!-- وصف الخدمة -->
+      <p class="card-text">
+        أكثر من مليون منزل معروض للبيع متاح على الموقع، يمكننا مساعدتك في العثور على منزل يناسبك.
+      </p>
+  
+      <!-- رابط إجراء: ابحث عن منزل -->
+      <a href="#" class="card-link">
+        <span>ابحث عن منزل</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+  
+    </div>
+  </li>
+  
+  </ul>
+  
+  </div>
+  </section>
+  <!-- 
+  - قسم العقارات #PROPERTY
+-->
+
+<section class="property" id="property">
+    <div class="container">
+  
+      <!-- العنوان الفرعي للقسم -->
+      <p class="section-subtitle">العقارات</p>
+  
+      <!-- عنوان القسم الرئيسي -->
+      <h2 class="h2 section-title">عروض مميزة</h2>
+  
+      <!-- قائمة العقارات مع خاصية التمرير -->
+      <ul class="property-list has-scrollbar">
+  
+        <li>
+          <div class="property-card">
+  
+            <!-- صورة العقار مع شارة الحالة -->
+            <figure class="card-banner">
+  
+              <a href="#">
+                <img src="./assets/images/property-1.jpg" alt="شقة جديدة بإطلالة جميلة" class="w-100">
+              </a>
+  
+              <!-- شارة خضراء تعني أن العقار للإيجار -->
+              <div class="card-badge green">للإيجار</div>
+  
+              <!-- أزرار تفاعلية على صورة العقار -->
+              <div class="banner-actions">
+  
+                <!-- زر يعرض الموقع -->
+                <button class="banner-actions-btn">
+                  <ion-icon name="location"></ion-icon>
+                  <address>بيلمونت غاردنز، شيكاغو</address>
+                </button>
+  
+                <!-- زر يعرض عدد الصور -->
+                <button class="banner-actions-btn">
+                  <ion-icon name="camera"></ion-icon>
+                  <span>4</span>
+                </button>
+  
+                <!-- زر يعرض عدد مقاطع الفيديو -->
+                <button class="banner-actions-btn">
+                  <ion-icon name="film"></ion-icon>
+                  <span>2</span>
+                </button>
+  
+              </div>
+  
+            </figure>
+  
+            <!-- محتوى بطاقة العقار -->
+            <div class="card-content">
+  
+              <!-- سعر العقار الشهري -->
+              <div class="card-price">
+                <strong>$34,900</strong>/شهريًا
+              </div>
+  
+              <!-- عنوان العقار -->
+              <h3 class="h3 card-title">
+                <a href="#">شقة جديدة بإطلالة جميلة</a>
+              </h3>
+  
+              <!-- وصف مختصر للعقار -->
+              <p class="card-text">
+                منزل عائلي جميل وضخم في قلب منطقة ويستبوري. تم تجديده حديثًا بخشب جديد.
+              </p>
+  
+              <!-- تفاصيل العقار -->
+              <ul class="card-list">
+  
+                <!-- عدد غرف النوم -->
+                <li class="card-item">
+                  <strong>3</strong>
+                  <ion-icon name="bed-outline"></ion-icon>
+                  <span>غرف نوم</span>
+                </li>
+  
+                <!-- عدد الحمامات -->
+                <li class="card-item">
+                  <strong>2</strong>
+                  <ion-icon name="man-outline"></ion-icon>
+                  <span>حمامات</span>
+                </li>
+  
+                <!-- المساحة بالمتر المربع -->
+                <li class="card-item">
+                  <strong>3450</strong>
+                  <ion-icon name="square-outline"></ion-icon>
+                  <span>قدم مربع</span>
+                </li>
+  
+              </ul>
+  
+            </div>
+  
+            <!-- التذييل: معلومات المالك أو الوكيل -->
+            <div class="card-footer">
+  
+              <!-- معلومات الوكيل العقاري -->
+              <div class="card-author">
+  
+                <figure class="author-avatar">
+                  <img src="./assets/images/author.jpg" alt="ويليام سيكلو" class="w-100">
+                </figure>
+  
+                <div>
+                  <p class="author-name">
+                    <a href="#">ويليام سيكلو</a>
+                  </p>
+  
+                  <p class="author-title">وكيل عقارات</p>
+                </div>
+  
+              </div>
+  
+              <!-- أزرار الإجراء في التذييل (تكبير، مفضلة، إضافة) -->
+              <div class="card-footer-actions">
+  
+                <button class="card-footer-actions-btn">
+                  <ion-icon name="resize-outline"></ion-icon>
+                </button>
+  
+                <button class="card-footer-actions-btn">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+  
+                <button class="card-footer-actions-btn">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+        </li>
+        <!-- بطاقة العقار الثاني -->
+<li>
+    <div class="property-card">
+  
+      <!-- صورة العقار وشارة الحالة -->
+      <figure class="card-banner">
+        <a href="#">
+          <img src="./assets/images/property-2.jpg" alt="شقق حديثة" class="w-100">
+        </a>
+  
+        <!-- شارة برتقالية: العقار للبيع -->
+        <div class="card-badge orange">للبيع</div>
+  
+        <!-- أزرار تفاعلية -->
+        <div class="banner-actions">
+  
+          <!-- الموقع -->
+          <button class="banner-actions-btn">
+            <ion-icon name="location"></ion-icon>
+            <address>بيلمونت غاردنز، شيكاغو</address>
+          </button>
+  
+          <!-- عدد الصور -->
+          <button class="banner-actions-btn">
+            <ion-icon name="camera"></ion-icon>
+            <span>4</span>
+          </button>
+  
+          <!-- عدد الفيديوهات -->
+          <button class="banner-actions-btn">
+            <ion-icon name="film"></ion-icon>
+            <span>2</span>
+          </button>
+  
+        </div>
+      </figure>
+  
+      <!-- محتوى بطاقة العقار -->
+      <div class="card-content">
+  
+        <!-- السعر الشهري -->
+        <div class="card-price">
+          <strong>$34,900</strong>/شهريًا
+        </div>
+  
+        <!-- عنوان العقار -->
+        <h3 class="h3 card-title">
+          <a href="#">شقق حديثة</a>
+        </h3>
+  
+        <!-- وصف العقار -->
+        <p class="card-text">
+          منزل عائلي ضخم وجميل في قلب ويستبوري. مجدد بالكامل مع خشب جديد.
+        </p>
+  
+        <!-- تفاصيل العقار -->
+        <ul class="card-list">
+          <li class="card-item">
+            <strong>3</strong>
+            <ion-icon name="bed-outline"></ion-icon>
+            <span>غرف نوم</span>
+          </li>
+  
+          <li class="card-item">
+            <strong>2</strong>
+            <ion-icon name="man-outline"></ion-icon>
+            <span>حمامات</span>
+          </li>
+  
+          <li class="card-item">
+            <strong>3450</strong>
+            <ion-icon name="square-outline"></ion-icon>
+            <span>قدم مربع</span>
+          </li>
+        </ul>
+  
+      </div>
+  
+      <!-- تذييل البطاقة: معلومات الوكيل وأزرار -->
+      <div class="card-footer">
+  
+        <!-- بيانات وكيل العقارات -->
+        <div class="card-author">
+          <figure class="author-avatar">
+            <img src="./assets/images/author.jpg" alt="ويليام سيكلو" class="w-100">
+          </figure>
+  
+          <div>
+            <p class="author-name">
+              <a href="#">ويليام سيكلو</a>
+            </p>
+            <p class="author-title">وكيل عقارات</p>
+          </div>
+        </div>
+  
+        <!-- أزرار التفاعل -->
+        <div class="card-footer-actions">
+          <button class="card-footer-actions-btn">
+            <ion-icon name="resize-outline"></ion-icon>
+          </button>
+          <button class="card-footer-actions-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+          </button>
+          <button class="card-footer-actions-btn">
+            <ion-icon name="add-circle-outline"></ion-icon>
+          </button>
+        </div>
+  
+      </div>
+  
+    </div>
+  </li>
+  
+  <!-- بداية العقار الثالث -->
+  <li>
+    <div class="property-card">
+  
+      <!-- صورة العقار وشارة الحالة -->
+      <figure class="card-banner">
+        <a href="#">
+          <img src="./assets/images/property-3.jpg" alt="شقة مريحة" class="w-100">
+        </a>
+  
+        <!-- شارة خضراء: العقار للإيجار -->
+        <div class="card-badge green">للإيجار</div>
+  
+        <!-- أزرار تفاعلية -->
+        <div class="banner-actions">
+          <button class="banner-actions-btn">
+            <ion-icon name="location"></ion-icon>
+            <!-- استمرار العقار الثالث: شقة مريحة -->
+<address>بيلمونت غاردنز، شيكاغو</address>
+</button>
+
+<!-- عدد الصور -->
+<button class="banner-actions-btn">
+  <ion-icon name="camera"></ion-icon>
+  <span>4</span>
+</button>
+
+<!-- عدد الفيديوهات -->
+<button class="banner-actions-btn">
+  <ion-icon name="film"></ion-icon>
+  <span>2</span>
+</button>
+
+</div>
+</figure>
+
+<!-- محتوى البطاقة -->
+<div class="card-content">
+
+  <!-- السعر الشهري -->
+  <div class="card-price">
+    <strong>$34,900</strong>/شهريًا
+  </div>
+
+  <!-- عنوان العقار -->
+  <h3 class="h3 card-title">
+    <a href="#">شقة مريحة</a>
+  </h3>
+
+  <!-- وصف العقار -->
+  <p class="card-text">
+    منزل عائلي ضخم وجميل في قلب ويستبوري. تم تجديده مؤخرًا بخشب جديد.
+  </p>
+
+  <!-- تفاصيل العقار -->
+  <ul class="card-list">
+
+    <li class="card-item">
+      <strong>3</strong>
+      <ion-icon name="bed-outline"></ion-icon>
+      <span>غرف نوم</span>
+    </li>
+
+    <li class="card-item">
+      <strong>2</strong>
+      <ion-icon name="man-outline"></ion-icon>
+      <span>حمامات</span>
+    </li>
+
+    <li class="card-item">
+      <strong>3450</strong>
+      <ion-icon name="square-outline"></ion-icon>
+      <span>قدم مربع</span>
+    </li>
+
+  </ul>
+
+</div>
+
+<!-- التذييل: معلومات الوكيل والأزرار -->
+<div class="card-footer">
+
+  <!-- وكيل العقارات -->
+  <div class="card-author">
+    <figure class="author-avatar">
+      <img src="./assets/images/author.jpg" alt="ويليام سيكلو" class="w-100">
+    </figure>
+
+    <div>
+      <p class="author-name">
+        <a href="#">ويليام سيكلو</a>
+      </p>
+      <p class="author-title">وكيل عقارات</p>
+    </div>
+  </div>
+
+  <!-- أزرار التفاعل -->
+  <div class="card-footer-actions">
+    <button class="card-footer-actions-btn">
+      <ion-icon name="resize-outline"></ion-icon>
+    </button>
+
+    <button class="card-footer-actions-btn">
+      <ion-icon name="heart-outline"></ion-icon>
+    </button>
+
+    <button class="card-footer-actions-btn">
+      <ion-icon name="add-circle-outline"></ion-icon>
+    </button>
+  </div>
+
+</div>
+</div>
+</li>
+
+<!-- العقار الرابع: فيلا فاخرة -->
+<li>
+  <div class="property-card">
+
+    <!-- صورة العقار -->
+    <figure class="card-banner">
+      <a href="#">
+        <img src="./assets/images/property-4.png" alt="فيلا فاخرة في ريجو بارك" class="w-100">
+      </a>
+
+      <!-- شارة العقار: للإيجار -->
+      <div class="card-badge green">للإيجار</div>
+
+      <!-- أزرار الصورة -->
+      <div class="banner-actions">
+        <button class="banner-actions-btn">
+          <ion-icon name="location"></ion-icon>
+          <address>بيلمونت غاردنز، شيكاغو</address>
+        </button>
+
+        <button class="banner-actions-btn">
+          <ion-icon name="camera"></ion-icon>
+          <span>4</span>
+        </button>
+
+        <button class="banner-actions-btn">
+          <ion-icon name="film"></ion-icon>
+          <span>2</span>
+        </button>
+      </div>
+    </figure>
+
+    <!-- محتوى بطاقة الفيلا -->
+    <div class="card-content">
+
+      <div class="card-price">
+        <strong>$34,900</strong>/شهريًا
+      </div>
+
+      <!-- عنوان العقار -->
+      <h3 class="h3 card-title">
+        <a href="#">فيلا فاخرة في ريجو بارك</a>
+      </h3>
+
+      <!-- وصف -->
+      <p class="card-text">
+        منزل عائلي ضخم وجميل في قلب ويستبوري. تم تجديده مؤخرًا بخشب جديد.
+      </p>
+
+      <!-- التفاصيل -->
+      <ul class="card-list">
+        <li class="card-item">
+          <strong>3</strong>
+          <ion-icon name="bed-outline"></ion-icon>
+          <span>غرف نوم</span>
+        </li>
+
+        <li class="card-item">
+          <strong>2</strong>
+          <ion-icon name="man-outline"></ion-icon>
+          <span>حمامات</span>
+        </li>
+
+        <li class="card-item">
+          <strong>3450</strong>
+          <ion-icon name="square-outline"></ion-icon>
+          <span>قدم مربع</span>
+        </li>
+      </ul>
+
+    </div>
+    <!-- تذييل بطاقة العقار -->
+<div class="card-footer">
+
+    <!-- معلومات وكيل العقار -->
+    <div class="card-author">
+  
+      <figure class="author-avatar">
+        <img src="./assets/images/author.jpg" alt="ويليام سيكلو" class="w-100">
+      </figure>
+  
+      <div>
+        <p class="author-name">
+          <a href="#">ويليام سيكلو</a>
+        </p>
+  
+        <p class="author-title">وكيل عقارات</p>
+      </div>
+  
+    </div>
+  
+    <!-- أزرار التفاعل: تكبير - إعجاب - إضافة -->
+    <div class="card-footer-actions">
+  
+      <button class="card-footer-actions-btn">
+        <ion-icon name="resize-outline"></ion-icon>
+      </button>
+  
+      <button class="card-footer-actions-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+      </button>
+  
+      <button class="card-footer-actions-btn">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </button>
+  
+    </div>
+  
+  </div>
+  </div>
+  </li>
+  
+  </ul> <!-- نهاية قائمة العقارات -->
+  
+  </div>
+  </section> <!-- نهاية قسم العقارات -->
+  
+  
+  <!-- 
+    - قسم المرافق #FEATURES
+  -->
+  
+  <section class="features">
+    <div class="container">
+  
+      <!-- العنوان الفرعي للقسم -->
+      <p class="section-subtitle">مرافقنا</p>
+  
+      <!-- العنوان الرئيسي للقسم -->
+      <h2 class="h2 section-title">مرافق البناء</h2>
+  
+      <!-- قائمة المرافق -->
+      <ul class="features-list">
+  
+        <!-- بطاقة المرفق: موقف سيارات -->
+        <li>
+          <a href="#" class="features-card">
+  
+            <!-- أيقونة المرفق -->
+            <div class="card-icon">
+              <ion-icon name="car-sport-outline"></ion-icon>
+            </div>
+  
+            <!-- عنوان المرفق -->
+            <h3 class="card-title">موقف سيارات</h3>
+  
+            <!-- زر السهم -->
+            <div class="card-btn">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+  
+          </a>
+        </li>
+  
+        <!-- بطاقة المرفق: مسبح -->
+        <li>
+          <a href="#" class="features-card">
+  
+            <div class="card-icon">
+              <ion-icon name="water-outline"></ion-icon>
+            </div>
+  
+            <h3 class="card-title">مسبح</h3>
+  
+            <div class="card-btn">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+  
+          </a>
+        </li>
+        <!-- بطاقة مرفق: المنازل الذكية -->
+<li>
+    <a href="#" class="features-card">
+  
+      <!-- أيقونة المنزل الذكي -->
+      <div class="card-icon">
+        <ion-icon name="home-outline"></ion-icon>
+      </div>
+  
+      <!-- عنوان المرفق -->
+      <h3 class="card-title">منازل ذكية</h3>
+  
+      <!-- زر السهم -->
+      <div class="card-btn">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </div>
+  
+    </a>
+  </li>
+  
+  <!-- بطاقة مرفق: مدينة الألعاب للأطفال -->
+  <li>
+    <a href="#" class="features-card">
+  
+      <!-- أيقونة ملاعب الأطفال -->
+      <div class="card-icon">
+        <ion-icon name="football-outline"></ion-icon>
+      </div>
+  
+      <!-- عنوان المرفق -->
+      <h3 class="card-title">مدينة ألعاب الأطفال</h3>
+  
+      <!-- زر السهم -->
+      <div class="card-btn">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </div>
+  
+    </a>
+  </li>
+  <!-- قسم المدونة والمقالات -->
+<section class="blog" id="blog">
+    <div class="container">
+  
+      <!-- عنوان فرعي للقسم -->
+      <p class="section-subtitle">الأخبار والمدونات</p>
+  
+      <!-- العنوان الرئيسي -->
+      <h2 class="h2 section-title">آخر أخبارنا</h2>
+  
+      <!-- قائمة المدونات -->
+      <ul class="blog-list has-scrollbar">
+  
+        <!-- بطاقة مدونة 1 -->
+        <li>
+          <div class="blog-card">
+  
+            <figure class="card-banner">
+              <img src="./assets/images/blog-1.png" alt="أكثر التصاميم الداخلية إلهامًا لعام 2021" class="w-100">
+            </figure>
+  
+            <div class="blog-content">
+  
+              <div class="blog-content-top">
+  
+                <!-- بيانات الكاتب والتصنيف -->
+                <ul class="card-meta-list">
+  
+                  <li>
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person"></ion-icon>
+                      <span>بواسطة: المدير</span>
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="pricetags"></ion-icon>
+                      <span>تصميم داخلي</span>
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <!-- عنوان المدونة -->
+                <h3 class="h3 blog-title">
+                  <a href="#">أكثر التصاميم الداخلية إلهامًا لعام 2021</a>
+                </h3>
+  
+              </div>
+  
+              <div class="blog-content-bottom">
+                <div class="publish-date">
+                  <ion-icon name="calendar"></ion-icon>
+                  <time datetime="2022-27-04">27 نيسان 2022</time>
+                </div>
+  
+                <a href="#" class="read-more-btn">اقرأ المزيد</a>
+              </div>
+  
+            </div>
+  
+          </div>
+        </li>
+  
+        <!-- بطاقة مدونة 2 -->
+        <li>
+          <div class="blog-card">
+  
+            <figure class="card-banner">
+              <img src="./assets/images/blog-2.jpg" alt="أحدث معاملات العقارات التجارية" class="w-100">
+            </figure>
+  
+            <div class="blog-content">
+  
+              <div class="blog-content-top">
+  
+                <ul class="card-meta-list">
+  
+                  <li>
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person"></ion-icon>
+                      <span>بواسطة: المدير</span>
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="pricetags"></ion-icon>
+                      <span>عقارات</span>
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <h3 class="h3 blog-title">
+                  <a href="#">أحدث معاملات العقارات التجارية</a>
+                </h3>
+  
+              </div>
+  
+              <div class="blog-content-bottom">
+                <div class="publish-date">
+                  <ion-icon name="calendar"></ion-icon>
+                  <time datetime="2022-27-04">27 نيسان 2022</time>
+                </div>
+  
+                <a href="#" class="read-more-btn">اقرأ المزيد</a>
+              </div>
+  
+            </div>
+  
+          </div>
+        </li>
+  
+        <!-- بطاقة مدونة 3 -->
+        <li>
+          <div class="blog-card">
+  
+            <figure class="card-banner">
+              <img src="./assets/images/blog-3.jpg" alt="تفكر بتجديد غرفة المعيشة؟ إليك أسرار الخبراء" class="w-100">
+            </figure>
+  
+            <div class="blog-content">
+  
+              <div class="blog-content-top">
+  
+                <ul class="card-meta-list">
+  
+                  <li>
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person"></ion-icon>
+                      <span>بواسطة: المدير</span>
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="pricetags"></ion-icon>
+                      <span>غرف</span>
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <h3 class="h3 blog-title">
+                  <a href="#">تفكر بتجديد غرفة المعيشة؟ إليك أسرار الخبراء</a>
+                </h3>
+  
+              </div>
+  
+              <div class="blog-content-bottom">
+                <div class="publish-date">
+                  <ion-icon name="calendar"></ion-icon>
+                  <time datetime="2022-27-04">27 نيسان 2022</time>
+                </div>
+  
+                <a href="#" class="read-more-btn">اقرأ المزيد</a>
+              </div>
+  
+            </div>
+  
+          </div>
+        </li>
+  
+      </ul>
+  
+    </div>
+  </section>
+  <!-- 
+  - قسم الدعوة إلى الإجراء (Call To Action - CTA)
+-->
+
+<section class="cta">
+    <div class="container">
+  
+      <!-- بطاقة الدعوة إلى الإجراء -->
+      <div class="cta-card">
+  
+        <!-- محتوى البطاقة -->
+        <div class="card-content">
+  
+          <!-- عنوان البطاقة -->
+          <h2 class="h2 card-title">هل تبحث عن منزل أحلامك؟</h2>
+  
+          <!-- وصف البطاقة -->
+          <p class="card-text">يمكننا مساعدتك في تحقيق حلمك بمنزل جديد</p>
+        </div>
+  
+        <!-- زر الدعوة إلى الإجراء -->
+        <button class="btn cta-btn">
+          <span>استعرض العقارات</span>
+  
+          <!-- أيقونة سهم -->
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+  
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- إغلاق المقال الرئيسي -->
+  </article>
+  </main>
+  <!-- 
+  - #تذييل الصفحة (Footer)
+-->
+
+<footer class="footer">
+
+    <!-- الجزء العلوي من التذييل -->
+    <div class="footer-top">
+      <div class="container">
+  
+        <!-- الشعار والوصف ومعلومات الاتصال -->
+        <div class="footer-brand">
+  
+          <!-- شعار الموقع -->
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.png" alt="شعار هومفيرس">
+          </a>
+  
+          <!-- نص وصفي عن الموقع -->
+          <p class="section-text">
+            لوريم إيبسوم هو نص شكلي يستخدم في صناعة الطباعة والتنضيد. لوريم إيبسوم هو نص شكلي للطباعة.
+          </p>
+  
+          <!-- قائمة معلومات الاتصال -->
+          <ul class="contact-list">
+  
+            <!-- العنوان -->
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+                <address>إدلب-سوريا</address>
+              </a>
+            </li>
+  
+            <!-- رقم الهاتف -->
+            <li>
+              <a href="tel:+0123456789" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>+0123-456789</span>
+              </a>
+            </li>
+  
+            <!-- البريد الإلكتروني -->
+            <li>
+              <a href="mailto:contact@homeverse.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>contact@homeverse.com</span>
+              </a>
+            </li>
+  
+          </ul>
+  
+          <!-- روابط مواقع التواصل الاجتماعي -->
+          <ul class="social-list">
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+        <!-- روابط إضافية في التذييل -->
+        <div class="footer-link-box">
+  
+          <!-- روابط قسم الشركة -->
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">الشركة</p>
+            </li>
+  
+            <li><a href="#" class="footer-link">من نحن</a></li>
+            <li><a href="#" class="footer-link">المدونة</a></li>
+            <li><a href="#" class="footer-link">جميع المنتجات</a></li>
+            <li><a href="#" class="footer-link">خريطة المواقع</a></li>
+            <li><a href="#" class="footer-link">الأسئلة الشائعة</a></li>
+            <li><a href="#" class="footer-link">تواصل معنا</a></li>
+  
+          </ul>
+  
+          <!-- روابط قسم الخدمات -->
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">الخدمات</p>
+            </li>
+  
+            <li><a href="#" class="footer-link">تتبع الطلب</a></li>
+            <li><a href="#" class="footer-link">قائمة الرغبات</a></li>
+            <li><a href="#" class="footer-link">تسجيل الدخول</a></li>
+            <li><a href="#" class="footer-link">حسابي</a></li>
+            <li><a href="#" class="footer-link">الشروط والأحكام</a></li>
+            <li><a href="#" class="footer-link">عروض ترويجية</a></li>
+  
+          </ul>
+  
+          <!-- روابط قسم رعاية العملاء -->
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">رعاية العملاء</p>
+            </li>
+  
+            <li><a href="#" class="footer-link">تسجيل الدخول</a></li>
+            <li><a href="#" class="footer-link">حسابي</a></li>
+            <li><a href="#" class="footer-link">قائمة الرغبات</a></li>
+            <li><a href="#" class="footer-link">تتبع الطلب</a></li>
+            <li><a href="#" class="footer-link">الأسئلة الشائعة</a></li>
+            <li><a href="#" class="footer-link">تواصل معنا</a></li>
+  
+          </ul>
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- الجزء السفلي من التذييل -->
+    <div class="footer-bottom">
+      <div class="container">
+  
+        <!-- حقوق النشر -->
+        <p class="copyright">
+          &copy; 2022 <a href="#">codewithsadee</a>. جميع الحقوق محفوظة
+        </p>
+  
+      </div>
+    </div>
+  
+  </footer>
+  <!-- 
+    - custom js link
+    - رابط ملف الجافا سكريبت المخصص للموقع
+-->
+<script src="./assets/js/script.js"></script>
+
+<!-- 
+    - ionicon link
+    - روابط مكتبة الأيقونات Ionicons لإظهار الأيقونات بشكل مرئي في الموقع
+-->
+
+<!-- 
+  - تحميل مكتبة الأيقونات بنظام ES Modules (للمتصفحات الحديثة)
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+<!-- 
+  - تحميل مكتبة الأيقونات بنظام nomodule (للمتصفحات القديمة التي لا تدعم ES Modules)
+-->
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body> <!-- إغلاق وسم جسم الصفحة -->
+
+</html> <!-- إغلاق وسم وثيقة HTML كاملة -->
+
+
+
+
